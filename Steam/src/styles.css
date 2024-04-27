@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gpStoreDarkerGrey: #1b2838;
+  --gpStoreDarkGrey: #2a475e;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    var(--gpStoreDarkGrey) 0%,
+    var(--gpStoreDarkerGrey) 80%
+  );
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+span {
+  color: #dadada;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #171d25;
+  padding: 0 16px;
+  color: #c6d4df;
+  width: auto;
+  height: 104px;
+  position: relative;
+}
+nav {
+  display: flex;
+  position: absolute;
+  padding-top: 45px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  line-height: 16px;
+  float: left;
+  font-size: 14px;
+  color: #dcdedf;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+  /* font-weight: 500; */
+  text-transform: uppercase;
+  left: 0px;
+}
+nav .home-icon {
+  vertical-align: middle;
+  width: 177px;
+  height: 44px;
+}
+.support {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  padding-left: 70%;
+  flex-direction: row-reverse;
+}
+.support a {
+  margin-left: 20%;
+}
+#login {
+  font-size: 18px;
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  color: #b8b6b4;
+  font-size: 11px;
+  margin: 0px 30px;
+  padding: 0px 20px;
+}
+.btn-login a:hover {
+  color: white;
+  filter: brightness(300%);
+} 
+/* main */
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  background: #0e141b99;
+  padding: 10px 30px;
+}
+#searchzone {
+  margin-right: 30px;
+}
+.Search-form {
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  height: 27px;
+  position: relative;
+  display: flex;
+  width: 200px;
+  background: #316282;
+}
+#input-box {
+  outline: none;
+  border: none;
+  padding: 2px 10px 0px 10px;
+  background-color: transparent;
+  flex-grow: 1;
+  font-size: 13px;
+  align-items: stretch;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.Search-icon {
+  position: absolute;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+}
+.category-list{
+  font-size: 10px;
+}
+ul {
+  border-top: 1px solid black;
+  padding: 5px 0px;
+  display: block;
+  list-style-type: none;
+  margin-left: auto;
+}
+h1 {
+  padding: 10px 0px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.category-list {
+  font-size: 20px;
+  color: #b8b6b4;
+}
+li {
+  list-style: none;
+  text-align: center;
+}
+#btn-cate {
+  background: none;
+  color: #dadada;
+  font-size: 0.875rem;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  outline: transparent;
+  border: transparent;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-delay: 0.3ms;
+}
+#btn-cate:hover {
+  border: 1px solid transparent;
+  color: white;
+  outline: transparent;
+  filter: brightness(200%);
+  scale: 1.2;
+  cursor: pointer;
+}
+#showing {
+  margin-left: 50px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+}
+/* .card-container {
+  display: flex; 
+  flex-wrap: wrap; 
+} */
+.card {
+  margin: 30px 20px;
+  width: 230px;
+  height: 250px;
+  text-align: center;
+  transition: all 0.05s ease-in-out;
+  transition-delay: 0.5ms;
+  box-shadow: #171d25;
+  background: #316282;
+}
+.card img {
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
+
+main #game-details .game-detail-list .img-detail {
+  display: flex;
+    background-position: bottom;
+    padding-bottom: 1px;
+    margin: 0px auto;
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    flex-direction: row;
+}
+
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
