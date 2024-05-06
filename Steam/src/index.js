@@ -116,22 +116,23 @@ async function showGameDetails(appid) {
 function renderGameDetails(gameDetails) {
   const gameDetailsElement = document.getElementById("game-details");
   gameDetailsElement.innerHTML = `
-      <div calss="game-detail-list">
-      <div>
-      <h2>${gameDetails.name}</h2>
-      <p><strong>Price:</strong> $${gameDetails.price}</p>
+      <div id="game-detail-list">
+        <div>
+        <h2>${gameDetails.name}</h2>
+        <p><strong>Price:</strong> $${gameDetails.price}</p>
       </div>
-      <div class="img-detail">
-      <img src="${gameDetails.header_image}" alt="${gameDetails.name}" />
-      <div class="description-game">
-      <p><strong>Release Date:</strong> ${gameDetails.release_date}</p>
-      <p><strong>Developer:</strong> ${gameDetails.developer}</p>
-      <p><strong>Genres:</strong> ${gameDetails.genres}</p>
-      <p><strong>Description</strong> ${gameDetails.description}</p>
-      <button onclick="showGameList()">Back to Game List</button>
-      </div>
-      </div>
-      </div>
+      <div id="img-detail">
+        <img id="image" src="${gameDetails.header_image}" alt="${gameDetails.name}" />
+        <div id="description-game">
+          <p><strong>Release Date:</strong> ${gameDetails.release_date}</p>
+          <p><strong>Developer:</strong> ${gameDetails.developer}</p>
+          <p><strong>Genres:</strong> ${gameDetails.genres}</p>
+          <p><strong>Description</strong> ${gameDetails.description}</p>
+        </div>
+        </div>
+        <button id="button-transfer" onclick="showGameList()">Back to Game List</button>
+        </div>
+
   `;
 }
 

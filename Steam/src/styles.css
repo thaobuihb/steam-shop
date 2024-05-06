@@ -89,6 +89,7 @@ nav .home-icon {
 } 
 /* main */
 main {
+  position: absolute;
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -182,10 +183,7 @@ li {
   height: auto;
   position: relative;
 }
-/* .card-container {
-  display: flex; 
-  flex-wrap: wrap; 
-} */
+
 .card {
   margin: 30px 20px;
   width: 230px;
@@ -209,19 +207,61 @@ li {
   filter: brightness(150%);
 }
 
-
-main #game-details .game-detail-list .img-detail {
-  display: flex;
-    background-position: bottom;
-    padding-bottom: 1px;
-    margin: 0px auto;
-    padding: 16px;
-    margin-bottom: 8px;
-    margin-top: 10px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
-    flex-direction: row;
+#game-details {
+  position: relative;
 }
 
+#game-detail-list {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    padding: 16px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    margin-left: 50px;
+
+}
+#img-detail {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  
+}
+#image{
+  width: 500px;
+  height: 300px;
+}
+#description-game {
+  padding: 15px;
+
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  unicode-bidi: isolate;
+}
+
+#button-transfer{
+position: relative;
+display: flex;
+margin-top: 45%;
+width: 130px;
+height: 50px;
+justify-content: space-around;
+align-items: center;
+border-radius: 10px;
+}
+
+#button-transfer:hover{
+  border: 1px solid transparent;
+  outline: transparent;
+  filter: brightness(200%);
+  scale: 1.2;
+  cursor: pointer;
+}
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   nav {
